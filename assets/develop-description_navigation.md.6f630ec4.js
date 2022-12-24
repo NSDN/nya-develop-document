@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.2774ba3d.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"develop-description/navigation.md","lastUpdated":1671847840000}'),o={name:"develop-description/navigation.md"};function n(r,i,s,c,p,d){return a(),t("div")}const m=e(o,[["render",n]]);export{l as __pageData,m as default};
