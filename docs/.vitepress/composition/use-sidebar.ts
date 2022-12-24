@@ -7,6 +7,10 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     // 产品需求文档
     ...useRequirementsDocumentSidebar(),
     ...useDiscussionRecordSidebar(),
+
+    // 前端文档
+    ...useFrontendPageDesignSidebar(),
+    ...useFrontendComponentDesignSidebar(),
   }
 }
 
@@ -31,8 +35,8 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         text: '前端文档',
         collapsible: true,
         items: [
-          { text: '画面设计书', link: '/' },
-          { text: '组件设计书', link: '/' },
+          { text: '画面设计书', link: '/frontend/page-design/' },
+          { text: '组件设计书', link: '/frontend/component-design/' },
         ],
       },
 
@@ -69,7 +73,7 @@ function useRequirementsDocumentSidebar(): DefaultTheme.Sidebar {
 }
 
 function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
-  const ROOT_PATH: string = '/prd/discussion-record'
+  const ROOT_PATH: string = '/prd/discussion-record/'
 
   return {
     [ROOT_PATH]: [
@@ -77,7 +81,7 @@ function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
         text: '',
         items: [
           { text: '回到首页', link: '/' },
-          { text: '需求讨论记录目录', link: `${ROOT_PATH}/` },
+          { text: '需求讨论记录目录', link: ROOT_PATH },
         ],
       },
 
@@ -86,8 +90,40 @@ function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
         items: [
           {
             text: '2022.07.15 需求讨论（中午）',
-            link: `${ROOT_PATH}/discussion_07_15.md`,
+            link: `${ROOT_PATH}discussion_07_15.md`,
           },
+        ],
+      },
+    ],
+  }
+}
+
+function useFrontendPageDesignSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH: string = '/frontend/page-design/'
+
+  return {
+    [ROOT_PATH]: [
+      {
+        text: '',
+        items: [
+          { text: '回到首页', link: '/' },
+          { text: '前端 - 画面设计书', link: ROOT_PATH },
+        ],
+      },
+    ],
+  }
+}
+
+function useFrontendComponentDesignSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH: string = '/frontend/component-design/'
+
+  return {
+    [ROOT_PATH]: [
+      {
+        text: '',
+        items: [
+          { text: '回到首页', link: '/' },
+          { text: '前端 - 组件设计书', link: ROOT_PATH },
         ],
       },
     ],
