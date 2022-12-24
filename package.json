@@ -1,0 +1,18 @@
+{
+  "name": "nya-develop-document",
+  "version": "1.0.0",
+  "description": "喵玉殿新版论坛开发文档",
+  "main": "index.js",
+  "repository": "git@private:NSDN/nya-develop-document.git",
+  "author": "SETSUIKI HYORYU <tayutai@outlook.jp>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.33",
+    "vue": "^3.2.45"
+  }
+}
