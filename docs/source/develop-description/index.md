@@ -1,12 +1,6 @@
-# 喵玉殿新版论坛开发文档
+# 文档开发说明
 
-这是喵玉殿新版论坛的开发文档。若要加入文档的创作请参阅[文档开发说明](https://github.com/NSDN/nya-develop-document#readme)
-
-## 仓库
-
-- 开发文档：<https://github.com/NSDN/nya-develop-document>
-- 前端：<https://github.com/NSDN/nya-vue>
-- 后端：TODO
+本文档框架为 [VitePress](https://vitepress.vuejs.org/)
 
 ## 本地启动开发文档
 
