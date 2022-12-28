@@ -110,6 +110,11 @@ function useFrontendPageDesignSidebar(): DefaultTheme.Sidebar {
           { text: '前端 - 画面设计书', link: ROOT_PATH },
         ],
       },
+
+      {
+        text: '画面设计书',
+        items: [{ text: 'MainLayout', link: `${ROOT_PATH}main-layout` }],
+      },
     ],
   }
 }
