@@ -92,6 +92,11 @@ function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
             text: '2022.07.15 需求讨论（中午）',
             link: `${ROOT_PATH}discussion_07_15.md`,
           },
+
+          {
+            text: '20221230 群内讨论',
+            link: `${ROOT_PATH}discussion_20221230.md`,
+          },
         ],
       },
     ],
