@@ -11,6 +11,9 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     // 前端文档
     ...useFrontendPageDesignSidebar(),
     ...useFrontendComponentDesignSidebar(),
+
+    // 后端文档
+    ...useBackendAPIDesignSidebar(),
   }
 }
 
@@ -43,7 +46,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
       {
         text: '后端文档',
         collapsible: true,
-        items: [{ text: 'TODO', link: '/' }],
+        items: [{ text: 'API 设计书', link: '/backend/api-design/' }],
       },
     ],
   }
@@ -134,6 +137,29 @@ function useFrontendComponentDesignSidebar(): DefaultTheme.Sidebar {
         items: [
           { text: '回到首页', link: '/' },
           { text: '前端 - 组件设计书', link: ROOT_PATH },
+        ],
+      },
+    ],
+  }
+}
+
+function useBackendAPIDesignSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH: string = '/backend/api-design/'
+
+  return {
+    [ROOT_PATH]: [
+      {
+        text: '',
+        items: [
+          { text: '回到首页', link: '/' },
+          { text: '后端 - API 设计书', link: ROOT_PATH },
+        ],
+      },
+
+      {
+        text: 'API 设计书',
+        items: [
+          { text: '创建漫画主题 API', link: `${ROOT_PATH}create-commic-topic` },
         ],
       },
     ],
