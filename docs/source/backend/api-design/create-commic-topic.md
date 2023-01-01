@@ -14,6 +14,7 @@
 
 |物理名|理论名|类型|必须|
 |-|-|-|-|
+|plateRouteName|版块路由名|string|true|
 |topicTitle|主题标题|string|true|
 |pages|图片列表|Commic.Page[]|true|
 
