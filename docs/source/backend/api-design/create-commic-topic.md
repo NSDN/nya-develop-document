@@ -1,26 +1,26 @@
-# 创建漫画主题 API
+# 创建漫画主题 API（草案）
 
 ## 说明
 
-点击提交主题按钮时执行此 API。
+提交主题执行此 API。
 
-## HTTP 基本信息
+## 请求
 
-- URL: `/topic/commic`
-- Method: POST
-- Content-Type: application/json
+|方法|URL|
+|-|-|
+|PSOT|/topic/commic|
 
-## Request Body
+### 请求参数
 
-|物理名|理论名|类型|必须|
+|物理名|逻辑名|类型|必须|
 |-|-|-|-|
 |plateRouteName|版块路由名|string|true|
 |topicTitle|主题标题|string|true|
 |pages|图片列表|Commic.Page[]|true|
 
-### Commic.Page
+#### Commic.Page
 
-|物理名|理论名|类型|必须|说明|
+|物理名|逻辑名|类型|必须|说明|
 |-|-|-|-|-|
 |id|主键|number|true|数组中的元素下标|
 |path|图标地址|string|true|初始为空或为用户图床中的地址|
@@ -29,5 +29,5 @@
 
 ## Response
 
-- 正常: 状态码
+- 正常： 状态码
 - 异常： 状态码 + 错误信息

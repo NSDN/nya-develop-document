@@ -13,11 +13,13 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     ...useFrontendComponentDesignSidebar(),
 
     // 后端文档
-    ...useBackendAPIDesignSidebar(),
+    ...useBackendSidebar(),
   }
 }
 
 function useHomePageSidebar(): DefaultTheme.Sidebar {
+  const BACKEND_ROOT = '/backend/'
+
   return {
     '/': [
       {
@@ -46,7 +48,11 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
       {
         text: '后端文档',
         collapsible: true,
-        items: [{ text: 'API 设计书', link: '/backend/api-design/' }],
+        items: [
+          { text: '开发规约', link: `${BACKEND_ROOT}convention` },
+          { text: '目录结构', link: `${BACKEND_ROOT}directory-structure` },
+          { text: 'API 设计书', link: `${BACKEND_ROOT}api-design/ping-test` },
+        ],
       },
     ],
   }
@@ -143,8 +149,9 @@ function useFrontendComponentDesignSidebar(): DefaultTheme.Sidebar {
   }
 }
 
-function useBackendAPIDesignSidebar(): DefaultTheme.Sidebar {
-  const ROOT_PATH: string = '/backend/api-design/'
+function useBackendSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH: string = '/backend/'
+  const API_DESIGN_PATH: string = `${ROOT_PATH}api-design/`
 
   return {
     [ROOT_PATH]: [
@@ -152,14 +159,22 @@ function useBackendAPIDesignSidebar(): DefaultTheme.Sidebar {
         text: '',
         items: [
           { text: '回到首页', link: '/' },
-          { text: '后端 - API 设计书', link: ROOT_PATH },
+          { text: '开发规约', link: `${ROOT_PATH}convention` },
+          { text: '目录结构', link: `${ROOT_PATH}directory-structure` },
         ],
       },
 
       {
         text: 'API 设计书',
         items: [
-          { text: '创建漫画主题 API', link: `${ROOT_PATH}create-commic-topic` },
+          {
+            text: 'HTTP 连接测试 API',
+            link: `${API_DESIGN_PATH}ping-test`,
+          },
+          {
+            text: '创建漫画主题 API（草案）',
+            link: `${API_DESIGN_PATH}create-commic-topic`,
+          },
         ],
       },
     ],
