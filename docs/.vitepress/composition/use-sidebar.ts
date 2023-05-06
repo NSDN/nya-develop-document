@@ -172,6 +172,14 @@ function useBackendSidebar(): DefaultTheme.Sidebar {
             link: `${API_DESIGN_PATH}ping-test`,
           },
           {
+            text: '论坛版块列表获取 API',
+            link: `${API_DESIGN_PATH}get-plates`,
+          },
+          {
+            text: '喵玉汉化馆帖文列表获取 API',
+            link: `${API_DESIGN_PATH}get-localization-plate`,
+          },
+          {
             text: '创建漫画主题 API（草案）',
             link: `${API_DESIGN_PATH}create-commic-topic`,
           },
