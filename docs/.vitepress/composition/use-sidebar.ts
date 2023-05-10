@@ -9,8 +9,7 @@ export default function useSidebar(): DefaultTheme.Sidebar {
     ...useDiscussionRecordSidebar(),
 
     // 前端文档
-    ...useFrontendPageDesignSidebar(),
-    ...useFrontendComponentDesignSidebar(),
+    ...useFrontendSidebar(),
 
     // 后端文档
     ...useBackendSidebar(),
@@ -18,15 +17,11 @@ export default function useSidebar(): DefaultTheme.Sidebar {
 }
 
 function useHomePageSidebar(): DefaultTheme.Sidebar {
+  const FRONTEND_ROOT = '/frontend/'
   const BACKEND_ROOT = '/backend/'
 
   return {
     '/': [
-      {
-        text: '',
-        items: [{ text: '首页', link: '/' }],
-      },
-
       {
         text: '产品需求文档（PRD）',
         collapsible: true,
@@ -40,8 +35,10 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         text: '前端文档',
         collapsible: true,
         items: [
-          { text: '画面设计书', link: '/frontend/page-design/' },
-          { text: '组件设计书', link: '/frontend/component-design/' },
+          { text: '画面基本布局', link: `${FRONTEND_ROOT}main-layout` },
+          { text: '画面设计书', link: `${FRONTEND_ROOT}/page-design/todo` },
+          { text: '共通组件', link: `${FRONTEND_ROOT}common-components/todo` },
+          { text: '工具函数', link: `${FRONTEND_ROOT}utils/todo` },
         ],
       },
 
@@ -74,7 +71,7 @@ function useRequirementsDocumentSidebar(): DefaultTheme.Sidebar {
       {
         text: '需求文档',
         items: [
-          { text: '需求文档 v0.0.2', link: `${ROOT_PATH}/document_v0.0.x` },
+          { text: '需求文档 v0.0.3', link: `${ROOT_PATH}/document_v0.0.x` },
         ],
       },
     ],
@@ -112,38 +109,38 @@ function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
   }
 }
 
-function useFrontendPageDesignSidebar(): DefaultTheme.Sidebar {
-  const ROOT_PATH: string = '/frontend/page-design/'
+function useFrontendSidebar(): DefaultTheme.Sidebar {
+  const ROOT_PATH = '/frontend/'
+  const PAGE_DESIGN_PATH = `${ROOT_PATH}page-design/`
+  const COMMON_COMPONENTS_PATH = `${ROOT_PATH}common-components/`
+  const UTILS_PATH = `${ROOT_PATH}utils/`
 
   return {
     [ROOT_PATH]: [
       {
         text: '',
         items: [
-          { text: '回到首页', link: '/' },
-          { text: '前端 - 画面设计书', link: ROOT_PATH },
+          { text: '前端 - 回到首页', link: '/' },
+          { text: '画面基本布局', link: `${ROOT_PATH}main-layout` },
         ],
       },
 
       {
         text: '画面设计书',
-        items: [{ text: 'MainLayout', link: `${ROOT_PATH}main-layout` }],
+        collapsible: true,
+        items: [{ text: 'TODO', link: `${PAGE_DESIGN_PATH}todo` }],
       },
-    ],
-  }
-}
 
-function useFrontendComponentDesignSidebar(): DefaultTheme.Sidebar {
-  const ROOT_PATH: string = '/frontend/component-design/'
-
-  return {
-    [ROOT_PATH]: [
       {
-        text: '',
-        items: [
-          { text: '回到首页', link: '/' },
-          { text: '前端 - 组件设计书', link: ROOT_PATH },
-        ],
+        text: '共通组件',
+        collapsible: true,
+        items: [{ text: 'TODO', link: `${COMMON_COMPONENTS_PATH}todo` }],
+      },
+
+      {
+        text: '工具函数',
+        collapsible: true,
+        items: [{ text: 'TODO', link: `${UTILS_PATH}todo` }],
       },
     ],
   }
@@ -158,7 +155,7 @@ function useBackendSidebar(): DefaultTheme.Sidebar {
       {
         text: '',
         items: [
-          { text: '回到首页', link: '/' },
+          { text: '后端 - 回到首页', link: '/' },
           { text: '开发规约', link: `${ROOT_PATH}convention` },
           { text: '目录结构', link: `${ROOT_PATH}directory-structure` },
         ],
@@ -166,6 +163,7 @@ function useBackendSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'API 设计书',
+        collapsible: true,
         items: [
           {
             text: 'HTTP 连接测试 API',
