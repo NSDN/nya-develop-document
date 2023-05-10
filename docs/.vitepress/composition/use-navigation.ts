@@ -12,22 +12,8 @@ export function useNavigation(): DefaultTheme.NavItem[] {
       ],
     },
 
-    {
-      text: '前端文档',
-      items: [
-        { text: '画面设计书', link: '/frontend/page-design/' },
-        { text: '组件设计书', link: '/frontend/component-design/' },
-      ],
-    },
-
-    {
-      text: '后端文档',
-      link: '/backend/convention',
-    },
-
-    {
-      text: '文档开发说明',
-      link: '/develop-description/',
-    },
+    { text: '前端文档', link: '/frontend/main-layout' },
+    { text: '后端文档', link: '/backend/convention' },
+    { text: '文档开发说明', link: '/develop-description/' },
   ]
 }

@@ -2,7 +2,12 @@ import type { DefaultTheme } from 'vitepress'
 import type { CustomTheme } from '../types'
 
 import { defineConfigWithTheme } from 'vitepress'
-import { useSidebar, useHead, useNavigation } from './composition'
+import {
+  useSidebar,
+  useHead,
+  useNavigation,
+  useSocialLinks,
+} from './composition'
 
 /**
  * NOTE: Need use defineConfig when i18n type fixed,
@@ -23,8 +28,9 @@ export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
   },
 
   themeConfig: {
-    // logo: '/images/logo.png',
+    logo: '/images/logo.ico',
     nav: useNavigation(),
     sidebar: useSidebar(),
+    socialLinks: useSocialLinks(),
   },
 })
