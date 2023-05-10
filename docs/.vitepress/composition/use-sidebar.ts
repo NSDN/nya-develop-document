@@ -36,7 +36,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         collapsible: true,
         items: [
           { text: '画面基本布局', link: `${FRONTEND_ROOT}main-layout` },
-          { text: '画面设计书', link: `${FRONTEND_ROOT}/page-design/todo` },
+          { text: '画面设计书', link: `${FRONTEND_ROOT}/page-design/sidebar` },
           { text: '共通组件', link: `${FRONTEND_ROOT}common-components/todo` },
           { text: '工具函数', link: `${FRONTEND_ROOT}utils/todo` },
         ],
@@ -128,7 +128,7 @@ function useFrontendSidebar(): DefaultTheme.Sidebar {
       {
         text: '画面设计书',
         collapsible: true,
-        items: [{ text: 'TODO', link: `${PAGE_DESIGN_PATH}todo` }],
+        items: [{ text: '边栏', link: `${PAGE_DESIGN_PATH}sidebar` }],
       },
 
       {
