@@ -35,6 +35,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         text: '前端文档',
         collapsible: true,
         items: [
+          { text: '概述', link: `${FRONTEND_ROOT}overview` },
           { text: '画面基本布局', link: `${FRONTEND_ROOT}main-layout` },
           { text: '画面设计书', link: `${FRONTEND_ROOT}/page-design/sidebar` },
           { text: '共通组件', link: `${FRONTEND_ROOT}common-components/todo` },
@@ -46,8 +47,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         text: '后端文档',
         collapsible: true,
         items: [
-          { text: '开发规约', link: `${BACKEND_ROOT}convention` },
-          { text: '目录结构', link: `${BACKEND_ROOT}directory-structure` },
+          { text: '概述', link: `${BACKEND_ROOT}overview` },
           { text: 'API 设计书', link: `${BACKEND_ROOT}api-design/ping-test` },
         ],
       },
@@ -121,6 +121,7 @@ function useFrontendSidebar(): DefaultTheme.Sidebar {
         text: '',
         items: [
           { text: '前端 - 回到首页', link: '/' },
+          { text: '概述', link: `${ROOT_PATH}overview` },
           { text: '画面基本布局', link: `${ROOT_PATH}main-layout` },
         ],
       },
@@ -156,8 +157,7 @@ function useBackendSidebar(): DefaultTheme.Sidebar {
         text: '',
         items: [
           { text: '后端 - 回到首页', link: '/' },
-          { text: '开发规约', link: `${ROOT_PATH}convention` },
-          { text: '目录结构', link: `${ROOT_PATH}directory-structure` },
+          { text: '概述', link: `${ROOT_PATH}overview` },
         ],
       },
 
