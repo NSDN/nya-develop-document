@@ -71,7 +71,7 @@ function useRequirementsDocumentSidebar(): DefaultTheme.Sidebar {
       {
         text: '需求文档',
         items: [
-          { text: '需求文档 v0.0.3', link: `${ROOT_PATH}/document_v0.0.x` },
+          { text: '需求文档 v0.0.4', link: `${ROOT_PATH}/document_v0.0.x` },
         ],
       },
     ],
