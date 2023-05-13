@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as a}from"./app.1a9609cf.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"develop-description/sidbar.md","lastUpdated":1671847840000}'),r={name:"develop-description/sidbar.md"};function s(o,d,c,n,i,p){return a(),t("div")}const m=e(r,[["render",s]]);export{l as __pageData,m as default};
