@@ -17,8 +17,8 @@
 ## 书写规范
 
 - 使用 [JavaScript Standard Style](https://standardjs.com/readme-zhcn.html)
-- 文件名由小写字母及下划线、短横线所组成。下划线表示词组的连接；短横线表示所属。
-- 变量名尽量将单词拼写完整，如果一个词组有常用缩写可以使用（如 HyperText Markup Language> HTML）。
+- 文件名由小写字母及下划线、短横线所组成。短横线表示词组的连接；下划线表示所属。
+- 变量名尽量将单词拼写完整，如果一个词组有常用缩写可以使用（如 HyperText Markup Language > HTML）。
 
 ## 目录结构
 
