@@ -13,6 +13,7 @@
 |Naive UI（暂未使用）|UI 框架|
 |tiptap|富文本编缉器|
 |marked|Markdown 编缉器|
+|crypto-js|hash 预处理工具|
 
 ## 书写规范
 
