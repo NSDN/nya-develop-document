@@ -141,7 +141,17 @@ function useFrontendSidebar(): DefaultTheme.Sidebar {
       {
         text: '工具函数',
         collapsible: true,
-        items: [{ text: 'TODO', link: `${UTILS_PATH}todo` }],
+        items: [
+          {
+            text: '认证授权',
+            items: [
+              {
+                text: 'hashSecreate',
+                link: `${UTILS_PATH}authorization#hashsecreate`,
+              },
+            ],
+          },
+        ],
       },
     ],
   }
@@ -169,6 +179,17 @@ function useBackendSidebar(): DefaultTheme.Sidebar {
             text: 'HTTP 连接测试 API',
             link: `${API_DESIGN_PATH}ping-test`,
           },
+
+          {
+            text: '认证授权',
+            items: [
+              {
+                text: '登入 API',
+                link: `${API_DESIGN_PATH}authorization/login`,
+              },
+            ],
+          },
+
           {
             text: '论坛版块列表获取 API',
             link: `${API_DESIGN_PATH}get-plates`,
