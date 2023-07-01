@@ -1,7 +1,7 @@
 # 喵玉殿新版论坛开发文档
 
-这是喵玉殿新版论坛的开发文档：<http://root.nsdn.club/nya-develop-document/>。  
-若要加入文档的创作请参阅[文档开发说明](http://root.nsdn.club/nya-develop-document/develop-description/)
+这是喵玉殿新版论坛的开发文档：<https://nyasama.tech/nya-develop-document/>。  
+若要加入文档的创作请参阅[文档开发说明](https://nyasama.tech/nya-develop-document/)
 
 ## 仓库
 
