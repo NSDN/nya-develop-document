@@ -129,7 +129,10 @@ function useFrontendSidebar(): DefaultTheme.Sidebar {
       {
         text: '画面设计书',
         collapsible: true,
-        items: [{ text: '边栏', link: `${PAGE_DESIGN_PATH}sidebar` }],
+        items: [
+          { text: '边栏', link: `${PAGE_DESIGN_PATH}sidebar` },
+          { text: '登入画面', link: `${PAGE_DESIGN_PATH}login` },
+        ],
       },
 
       {
