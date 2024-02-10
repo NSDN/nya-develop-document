@@ -28,6 +28,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         items: [
           { text: '需求文档', link: '/prd/requirements-document/' },
           { text: '需求讨论记录', link: '/prd/discussion-record/' },
+          { text: '待办事项', link: '/prd/todo-list' },
         ],
       },
 
@@ -129,7 +130,10 @@ function useFrontendSidebar(): DefaultTheme.Sidebar {
       {
         text: '画面设计书',
         collapsible: true,
-        items: [{ text: '边栏', link: `${PAGE_DESIGN_PATH}sidebar` }],
+        items: [
+          { text: '边栏', link: `${PAGE_DESIGN_PATH}sidebar` },
+          { text: '登入画面', link: `${PAGE_DESIGN_PATH}login` },
+        ],
       },
 
       {
