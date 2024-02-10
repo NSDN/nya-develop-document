@@ -28,6 +28,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         items: [
           { text: '需求文档', link: '/prd/requirements-document/' },
           { text: '需求讨论记录', link: '/prd/discussion-record/' },
+          { text: '待办事项', link: '/prd/todo-list' },
         ],
       },
 
