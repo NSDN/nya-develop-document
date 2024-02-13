@@ -19,6 +19,7 @@ export default function useSidebar(): DefaultTheme.Sidebar {
 function useHomePageSidebar(): DefaultTheme.Sidebar {
   const FRONTEND_ROOT = '/frontend/'
   const BACKEND_ROOT = '/backend/'
+  const REFERENCE_ROOT = '/reference/'
 
   return {
     '/': [
@@ -51,6 +52,11 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
           { text: '概述', link: `${BACKEND_ROOT}overview` },
           { text: 'API 设计书', link: `${BACKEND_ROOT}api-design/ping-test` },
         ],
+      },
+
+      {
+        text: '资料',
+        items: [{ text: '参考资料', link: `${REFERENCE_ROOT}reference` }],
       },
     ],
   }
