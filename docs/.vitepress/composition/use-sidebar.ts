@@ -34,6 +34,12 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
       },
 
       {
+        text: '方式设计',
+        collapsible: true,
+        items: [{ text: '图片管理', link: '/design/picture' }],
+      },
+
+      {
         text: '前端文档',
         collapsible: true,
         items: [
