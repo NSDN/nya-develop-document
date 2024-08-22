@@ -20,7 +20,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  # 构建工作
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
