@@ -14,7 +14,7 @@ import {
  * defineConfigwithTheme is used with custom theme.
  * */
 export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
-  base: '/nya-develop-document/',
+  base: '/',
   srcDir: './source', // relative to project root(vitepress-blog/docs/).
   lang: 'zh-CN',
   title: '喵玉殿新版论坛开发文档',
