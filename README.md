@@ -16,10 +16,10 @@
 git clone https://github.com/NSDN/nya-develop-document.git
 
 # 2. 安装依赖
-yarn install # npm install
+npm install
 
 # 3.启动服务
-yarn docs:dev # npm run docs:dev
+npm run docs:dev
 
 # 4.在浏览器中打开 URL
 # http://localhost:10126/nya-develop-document/

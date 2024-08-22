@@ -25,7 +25,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
     '/': [
       {
         text: '产品需求文档（PRD）',
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: '需求文档', link: '/prd/requirements-document/' },
           { text: '需求讨论记录', link: '/prd/discussion-record/' },
@@ -35,13 +35,13 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
 
       {
         text: '方式设计',
-        collapsible: true,
+        collapsed: false,
         items: [{ text: '图片管理', link: '/design/picture' }],
       },
 
       {
         text: '前端文档',
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: '概述', link: `${FRONTEND_ROOT}overview` },
           { text: '画面基本布局', link: `${FRONTEND_ROOT}main-layout` },
@@ -53,7 +53,7 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
 
       {
         text: '后端文档',
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: '概述', link: `${BACKEND_ROOT}overview` },
           { text: 'API 设计书', link: `${BACKEND_ROOT}api-design/ping-test` },
@@ -111,10 +111,13 @@ function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
             text: '2022.07.15 需求讨论（中午）',
             link: `${ROOT_PATH}discussion_07_15.md`,
           },
-
           {
             text: '20221230 群内讨论',
             link: `${ROOT_PATH}discussion_20221230.md`,
+          },
+          {
+            text: '20240822 群内讨论 漫画版块',
+            link: `${ROOT_PATH}discussion-20240822-commic-plate.md`,
           },
         ],
       },
@@ -141,7 +144,7 @@ function useFrontendSidebar(): DefaultTheme.Sidebar {
 
       {
         text: '画面设计书',
-        collapsible: true,
+        collapsed: false,
         items: [
           { text: '边栏', link: `${PAGE_DESIGN_PATH}sidebar` },
           { text: '登入画面', link: `${PAGE_DESIGN_PATH}login` },
@@ -150,13 +153,13 @@ function useFrontendSidebar(): DefaultTheme.Sidebar {
 
       {
         text: '共通组件',
-        collapsible: true,
+        collapsed: false,
         items: [{ text: 'TODO', link: `${COMMON_COMPONENTS_PATH}todo` }],
       },
 
       {
         text: '工具函数',
-        collapsible: true,
+        collapsed: false,
         items: [
           {
             text: '认证授权',
@@ -189,7 +192,7 @@ function useBackendSidebar(): DefaultTheme.Sidebar {
 
       {
         text: 'API 设计书',
-        collapsible: true,
+        collapsed: false,
         items: [
           {
             text: 'HTTP 连接测试 API',
