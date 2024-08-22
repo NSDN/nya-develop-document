@@ -4,10 +4,6 @@ export default function useSidebar(): DefaultTheme.Sidebar {
   return {
     ...useHomePageSidebar(),
 
-    // 产品需求文档
-    ...useRequirementsDocumentSidebar(),
-    ...useDiscussionRecordSidebar(),
-
     // 前端文档
     ...useFrontendSidebar(),
 
@@ -17,20 +13,15 @@ export default function useSidebar(): DefaultTheme.Sidebar {
 }
 
 function useHomePageSidebar(): DefaultTheme.Sidebar {
-  const FRONTEND_ROOT = '/frontend/'
-  const BACKEND_ROOT = '/backend/'
   const REFERENCE_ROOT = '/reference/'
+  const ARCHIVE_PATH = '/archive/'
 
   return {
     '/': [
       {
         text: '产品需求文档（PRD）',
         collapsed: false,
-        items: [
-          { text: '需求文档', link: '/prd/requirements-document/' },
-          { text: '需求讨论记录', link: '/prd/discussion-record/' },
-          { text: '待办事项', link: '/prd/todo-list' },
-        ],
+        items: [{ text: '需求讨论记录', link: '/prd/discussion-record' }],
       },
       {
         text: '方式设计',
@@ -41,60 +32,22 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
         text: '资料',
         items: [{ text: '参考资料', link: `${REFERENCE_ROOT}reference` }],
       },
-    ],
-  }
-}
-
-function useRequirementsDocumentSidebar(): DefaultTheme.Sidebar {
-  const ROOT_PATH: string = '/prd/requirements-document'
-
-  return {
-    [ROOT_PATH]: [
       {
-        text: '',
+        text: '归档',
+        collapsed: true,
         items: [
-          { text: '回到首页', link: '/' },
-          { text: '需求文档目录', link: `${ROOT_PATH}/` },
-        ],
-      },
-
-      {
-        text: '需求文档',
-        items: [
-          { text: '需求文档 v0.0.4', link: `${ROOT_PATH}/document_v0.0.x` },
-        ],
-      },
-    ],
-  }
-}
-
-function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
-  const ROOT_PATH: string = '/prd/discussion-record/'
-
-  return {
-    [ROOT_PATH]: [
-      {
-        text: '',
-        items: [
-          { text: '回到首页', link: '/' },
-          { text: '需求讨论记录目录', link: ROOT_PATH },
-        ],
-      },
-
-      {
-        text: '需求讨论记录',
-        items: [
+          { text: '需求文档 v0.0.4', link: `${ARCHIVE_PATH}/document_v0.0.x` },
           {
             text: '2022.07.15 需求讨论（中午）',
-            link: `${ROOT_PATH}discussion_07_15.md`,
+            link: `${ARCHIVE_PATH}discussion_07_15.md`,
           },
           {
             text: '20221230 群内讨论',
-            link: `${ROOT_PATH}discussion_20221230.md`,
+            link: `${ARCHIVE_PATH}discussion_20221230.md`,
           },
           {
             text: '20240822 群内讨论 漫画版块',
-            link: `${ROOT_PATH}discussion-20240822-commic-plate.md`,
+            link: `${ARCHIVE_PATH}discussion-20240822-commic-plate.md`,
           },
         ],
       },
