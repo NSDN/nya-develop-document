@@ -32,34 +32,11 @@ function useHomePageSidebar(): DefaultTheme.Sidebar {
           { text: '待办事项', link: '/prd/todo-list' },
         ],
       },
-
       {
         text: '方式设计',
         collapsed: false,
         items: [{ text: '图片管理', link: '/design/picture' }],
       },
-
-      {
-        text: '前端文档',
-        collapsed: false,
-        items: [
-          { text: '概述', link: `${FRONTEND_ROOT}overview` },
-          { text: '画面基本布局', link: `${FRONTEND_ROOT}main-layout` },
-          { text: '画面设计书', link: `${FRONTEND_ROOT}/page-design/sidebar` },
-          { text: '共通组件', link: `${FRONTEND_ROOT}common-components/todo` },
-          { text: '工具函数', link: `${FRONTEND_ROOT}utils/todo` },
-        ],
-      },
-
-      {
-        text: '后端文档',
-        collapsed: false,
-        items: [
-          { text: '概述', link: `${BACKEND_ROOT}overview` },
-          { text: 'API 设计书', link: `${BACKEND_ROOT}api-design/ping-test` },
-        ],
-      },
-
       {
         text: '资料',
         items: [{ text: '参考资料', link: `${REFERENCE_ROOT}reference` }],

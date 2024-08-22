@@ -11,17 +11,16 @@
 ```shell
 # 1. 下载代码
 git clone https://github.com/NSDN/nya-develop-document.git
+
 # 2. 安装依赖
-yarn install # npm install
+npm install
+
 # 3.启动服务
-yarn docs:dev # npm run docs:dev
+npm run docs:dev
+
 # 4.在浏览器中打开 URL
-# http://localhost:10126/nya-develop-document/
+# http://localhost:10126/
 ```
-
-## 更新远程开发文档
-
-提交 pull request 并合并（联系管理员合并或向管理员索取合并权限）
 
 ## 更新开发文档流程
 
@@ -79,18 +78,17 @@ function useDiscussionRecordSidebar(): DefaultTheme.Sidebar {
             text: '2022.07.15 需求讨论（中午）',
             link: `${ROOT_PATH}/discussion_07_15.md`,
           },
-          
+
           // 在此处添加新建的文章
           {
             text: 'Sample',
-            link: `${ROOT_PATH}/sample.md`
-          }
+            link: `${ROOT_PATH}/sample.md`,
+          },
         ],
       },
     ],
   }
 }
-
 ```
 
 ### 3. 提交修改
@@ -103,5 +101,5 @@ git commit --message 'feat: update docs'
 # 3.
 git push origin <your branch>
 
-# 4. 在 github 上创建 pull request 并联系管理员合并（或向管理员索取合并权限）
+# 4. 在 github 上创建 pull request 并联系管理员合并（或向管理员索取合并权限）。
 ```

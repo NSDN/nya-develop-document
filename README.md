@@ -1,7 +1,7 @@
 # 喵玉殿新版论坛开发文档
 
 这是喵玉殿新版论坛的开发文档：<https://doc.nyasama.tech/>。  
-若要加入文档的创作请参阅[文档开发说明](https://nyasama.tech/nya-develop-document/)
+若要加入文档的创作请参阅[文档开发说明](https://doc.nyasama.tech/develop-description/)。
 
 ## 仓库
 
@@ -22,9 +22,9 @@ npm install
 npm run docs:dev
 
 # 4.在浏览器中打开 URL
-# http://localhost:10126/nya-develop-document/
+# http://localhost:10126/
 ```
 
 ## 更新远程开发文档
 
-提交 pull request 并合并（联系管理员获取合并权限）
+提交 pull request 并合并（联系管理员获取合并权限）。
