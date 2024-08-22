@@ -12,7 +12,7 @@ import {
 /**
  * NOTE: Need use defineConfig when i18n type fixed,
  * defineConfigwithTheme is used with custom theme.
- * */
+ */
 export default defineConfigWithTheme<DefaultTheme.Config & CustomTheme.Config>({
   srcDir: './source', // relative to project root(vitepress-blog/docs/).
   lang: 'zh-CN',
